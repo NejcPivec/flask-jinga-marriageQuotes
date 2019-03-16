@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <ul >
+        {% for number in x %}
+            <li class="besedilo">{{ pregovori_skupno[number] }}</li>
+        {% endfor %}
+    </ul>
+    
+{% endblock content%}

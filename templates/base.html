@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+            
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper #0d47a1 blue darken-4">
+            <a href="#" class="brand-logo center">Marriage quotes</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="container center">
+        <h5>Every time you refresh the page, 5 new marriage quotes will be scrapped from the web. Enjoy!</h5>
+          
+          {% block content %}{% endblock content %}
+      
+          <img  src="../static/marirage.jpg" alt="slika ozadja">
+      </div>
+       
+        
+        
+      </div>
+    </main>
+
+    
+
+
+    <footer class="page-footer #0d47a1 blue darken-4">
+          <div class="container">
+         <p>© 2019 Copyright Text- made by Nejc Pivec</p> 
+          </div>
+    </footer>
+</body>
+</html>
